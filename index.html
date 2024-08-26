@@ -41,7 +41,9 @@
                     class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] mt-20">
                     <div class="flex justify-center">
                         <p class="text-white bg-[#2F2941] p-3 rounded-b-lg">Don't watch keyboard while
-                            playing...</p>
+                            playing...
+                        </p>
+
                     </div>
                     <div class="flex flex-col justify-center items-center h-full">
                         <p id="display-alphabet" class="text-[200px] font-bold font-poppins uppercase">
@@ -85,34 +87,44 @@
                         <kbd id="/" class="kbd">/</kbd>
                     </div>
                 </div>
-                <!-- life score  -->
-                <div class="flex w-3/5 justify-between">
+                <!-- life -- score  -->
+                <div class="flex w-3/4 justify-between">
+                    <!-- display life  -->
                     <button class="btn rounded-[30px] font-inter text-sm bg-purple-600 border-0 text-white px-4">
                         <span class="">Life</span>
                         <img src="images/life.png" alt="">
-                        <span>1</span>
+                        <span id="life-value">5</span>
                     </button>
-
+                    <!-- display score  -->
                     <button class="btn rounded-[30px] font-inter text-sm bg-blue-600 border-0 text-white px-4">
                         <span>Score</span>
                         <img src="images/monetization_on.png" alt="">
-                        <span>1</span>
+                        <span id="score-value">0</span>
 
                     </button>
                 </div>
             </div>
+            <div class=" flex justify-center">
+                <p
+                    class="text-center text-slate-600 bg-[#f2f2f2] p-4 w-1/3 rounded-xl font-poppins text-sm font-semibold">
+                    Copy
+                    @ Mahade
+                    Hasan
+                </p>
+            </div>
         </section>
         <!--section score  -->
-        <section class="hidden score min-h-screen flex justify-center items-center">
+        <section id="score" class="hidden min-h-screen flex justify-center items-center">
             <div class=" flex flex-col justify-center items-center rounded-2xl p-8 bg-[#FFFFFF33]">
+                <h3 class="text-2xl text-yellow-600 font-poppins font-semibold p-4">Game Over !</h3>
                 <h1 class="text-7xl font-bold text-white">
                     <span>Score:</span>
-                    <span>14</span>
+                    <span id="final-score">0</span>
                 </h1>
-                <button type="button"
-                    class="font-poppins text-2xl font-bold bg-white p-4 rounded-md text-black my-4">Play
+                <button onclick="play()" type="button"
+                    class="font-poppins text-lg font-semibold bg-white p-4 rounded-md text-black my-4">Play
                     Again</button>
-                <p class="font-poppins text-xl text-white">Practice will make you Pro</p>
+                <p class="font-poppins text-white">Practice will make you Pro</p>
             </div>
         </section>
     </main>
